@@ -1,0 +1,6 @@
+{
+  "name": "PaisaWaisa",
+  "description": "PaisaWaisa - Campus money companion for college students with real-time burn-rate analytics, campus spending categories, smart rollover savings, and budget triggers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

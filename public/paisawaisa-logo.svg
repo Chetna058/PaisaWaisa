@@ -1,0 +1,124 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 120" width="420" height="120" fill="none">
+  <defs>
+    <!-- Background Gradient for Emblem -->
+    <linearGradient id="emblemBackdrop" x1="0" y1="0" x2="120" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ECFDF5" />
+      <stop offset="100%" stop-color="#D1FAE5" />
+    </linearGradient>
+
+    <!-- Wallet Gradient -->
+    <linearGradient id="walletGrad" x1="16" y1="36" x2="100" y2="108" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B4644" />
+      <stop offset="100%" stop-color="#062E2D" />
+    </linearGradient>
+
+    <!-- Wallet Flap Gradient -->
+    <linearGradient id="walletFlapGrad" x1="18" y1="46" x2="98" y2="76" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0D5C58" />
+      <stop offset="100%" stop-color="#093F3C" />
+    </linearGradient>
+
+    <!-- Rupee Notes Gradients -->
+    <linearGradient id="noteGrad1" x1="30" y1="16" x2="86" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#34D399" />
+      <stop offset="100%" stop-color="#059669" />
+    </linearGradient>
+    <linearGradient id="noteGrad2" x1="22" y1="24" x2="74" y2="52" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6EE7B7" />
+      <stop offset="100%" stop-color="#10B981" />
+    </linearGradient>
+
+    <!-- Gold Coin Gradients -->
+    <linearGradient id="coinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FDE047" />
+      <stop offset="50%" stop-color="#F59E0B" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="coinHighlight" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FEF08A" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+
+    <!-- Growth Arrow Gradient -->
+    <linearGradient id="growthArrowGrad" x1="44" y1="92" x2="114" y2="20" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="50%" stop-color="#10B981" />
+      <stop offset="100%" stop-color="#34D399" />
+    </linearGradient>
+
+    <filter id="pwDropShadow" x="-10%" y="-10%" width="125%" height="125%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#042F2C" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- ICON SYMBOL (X: 0 to 120) -->
+  <g transform="translate(4, 0)">
+    <!-- Base Rounded Emblem -->
+    <rect x="4" y="4" width="112" height="112" rx="28" fill="url(#emblemBackdrop)" stroke="#A7F3D0" stroke-width="2.5" />
+
+    <!-- Indian Rupee Note 1 (Back) -->
+    <g transform="rotate(10 60 40)">
+      <rect x="36" y="16" width="46" height="26" rx="4" fill="url(#noteGrad1)" stroke="#A7F3D0" stroke-width="1" />
+      <circle cx="59" cy="29" r="6" fill="#047857" opacity="0.35" />
+      <text x="59" y="33" font-size="10" font-weight="bold" fill="#ECFDF5" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif">₹</text>
+    </g>
+
+    <!-- Indian Rupee Note 2 (Front with ₹) -->
+    <g transform="rotate(-6 52 38)">
+      <rect x="28" y="20" width="50" height="28" rx="4" fill="url(#noteGrad2)" stroke="#D1FAE5" stroke-width="1.2" />
+      <circle cx="53" cy="34" r="7" fill="#065F46" opacity="0.4" />
+      <text x="53" y="38" font-size="12" font-weight="800" fill="#FFFFFF" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif">₹</text>
+      <line x1="33" y1="26" x2="40" y2="26" stroke="#ECFDF5" stroke-width="1.5" stroke-linecap="round" opacity="0.8" />
+      <line x1="66" y1="26" x2="73" y2="26" stroke="#ECFDF5" stroke-width="1.5" stroke-linecap="round" opacity="0.8" />
+    </g>
+
+    <!-- Wallet Body with Shadow -->
+    <g filter="url(#pwDropShadow)">
+      <rect x="18" y="38" width="80" height="58" rx="14" fill="url(#walletGrad)" stroke="#115E59" stroke-width="2" />
+      <path d="M18 48 C36 54, 76 54, 98 48 L98 58 C76 64, 36 64, 18 58 Z" fill="url(#walletFlapGrad)" opacity="0.9" />
+      <rect x="74" y="60" width="24" height="15" rx="7.5" fill="#042F2C" stroke="#10B981" stroke-width="1.5" />
+      <circle cx="82" cy="67.5" r="3" fill="#34D399" />
+    </g>
+
+    <!-- Coin Stacks -->
+    <g transform="translate(14, 70)">
+      <!-- Left Stack -->
+      <ellipse cx="14" cy="25" rx="11" ry="4" fill="#B45309" />
+      <ellipse cx="14" cy="23" rx="11" ry="4" fill="url(#coinGrad)" stroke="#FDE047" stroke-width="0.8" />
+      <ellipse cx="14" cy="19" rx="11" ry="4" fill="#B45309" />
+      <ellipse cx="14" cy="17" rx="11" ry="4" fill="url(#coinGrad)" stroke="#FDE047" stroke-width="0.8" />
+      <ellipse cx="14" cy="13" rx="11" ry="4" fill="#B45309" />
+      <ellipse cx="14" cy="11" rx="11" ry="4" fill="url(#coinHighlight)" stroke="#FEF08A" stroke-width="0.8" />
+      <text x="14" y="13.5" font-size="6.5" font-weight="bold" fill="#78350F" text-anchor="middle" font-family="'Plus Jakarta Sans', sans-serif">₹</text>
+
+      <!-- Right Stack -->
+      <ellipse cx="28" cy="27" rx="9" ry="3.5" fill="#B45309" />
+      <ellipse cx="28" cy="25" rx="9" ry="3.5" fill="url(#coinGrad)" stroke="#FDE047" stroke-width="0.8" />
+      <ellipse cx="28" cy="21" rx="9" ry="3.5" fill="#B45309" />
+      <ellipse cx="28" cy="19" rx="9" ry="3.5" fill="url(#coinGrad)" stroke="#FDE047" stroke-width="0.8" />
+      <ellipse cx="28" cy="15" rx="9" ry="3.5" fill="#B45309" />
+      <ellipse cx="28" cy="13" rx="9" ry="3.5" fill="url(#coinHighlight)" stroke="#FEF08A" stroke-width="0.8" />
+    </g>
+
+    <!-- Growth Arrow -->
+    <g filter="url(#pwDropShadow)">
+      <path d="M48 94 C68 84, 82 66, 94 36" stroke="url(#growthArrowGrad)" stroke-width="6" stroke-linecap="round" />
+      <path d="M80 32 L98 32 L98 50" stroke="#10B981" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" />
+      <circle cx="98" cy="32" r="3.5" fill="#FEF08A" />
+    </g>
+  </g>
+
+  <!-- BRAND WORDMARK & TYPOGRAPHY -->
+  <g transform="translate(138, 20)">
+    <!-- Wordmark: Paisa (Dark Teal #0A4D54) + Waisa (Emerald Green #059669) -->
+    <text x="0" y="52" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="44" font-weight="800" letter-spacing="-0.03em">
+      <tspan fill="#093F3C">Paisa</tspan>
+      <tspan fill="#059669">Waisa</tspan>
+    </text>
+
+    <!-- Tagline: Spend Smart. Save More. Live Better. -->
+    <text x="2" y="78" font-family="'Plus Jakarta Sans', -apple-system, sans-serif" font-size="13" font-weight="600" fill="#494454" letter-spacing="0.04em">
+      Spend Smart. Save More. Live Better.
+    </text>
+  </g>
+</svg>
